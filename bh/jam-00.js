@@ -1,8 +1,17 @@
-//queer-coded bh jam-00.js
+//hi
+//we're M(they/them)
+//happy pride y'all
+//🌈
+const f = () => a.fft[0]
+const pi = () => Math.random(Math.PI)
+const sh = (o,f) => shape()
+.scale(pi)
+	.rotate(() => time, 1)
+	.out(o)
 s0.initImage("https://raw.githubusercontent.com/markdenardo/queer-coded/main/bh/bh(0)_0.png")
 s1.initVideo("https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGE1ZjI3MjVhYjlhN2IyNjQ3ZDI5MDZjM2U3NDhlYWNkNDgzZWY3YiZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/fdd85RxytnbqU58hwP/giphy.mp4")
-const pi = () => Math.PI
-const f = () => a.fft[0]
+sh(o2,f)
+
 src(s0)
 	.blend(s1)
 	.out(o0)
