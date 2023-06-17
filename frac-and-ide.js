@@ -8,7 +8,7 @@ await import("https://hydra-extensions.glitch.me/hydra-canvas.js")
 await import("https://hydra-extensions.glitch.me/hydra-mouse.js")
 await import("https://cdn.statically.io/gl/metagrowing/extra-shaders-for-hydra/main/lib/lib-noise.js")
 
-setResolution(1720, 1720)
+setResolution(1440, 1440)
 oS.setNearest()
 oS.setClamp()
 canvas.setRelativeSize(1)
@@ -56,22 +56,24 @@ feedbacks(BRANCHES)
 	.mult(gradient(), .1)
 	.saturate(1.4)
 	.blend(o0, .5)
-// uncomment for the DROP 🌊
-// 	.scale(pi)
-// 	.mask(solid(1, 1, 2)
-// 		.color(1, 0, 10)
-// 		.modulate(o0))
+	// uncomment for the DROP 🌊
+	// 	.scale(pi)
+	// 	.mask(solid(1, 1, 2)
+	// 		.color(1, 0, 10)
+	// 		.modulate(o0))
 	.out(o0)
-render(o0)
 
-//ideon sketch mdn 2022
-// const f=(()=>a.fft[0])
-// s0.initVideo("https://media1.giphy.com/media/eUX0LVWUUbtLaAI5HT/giphy.mp4")
-// s0.initVideo("https://media1.giphy.com/media/eUX0LVWUUbtLaAI5HT/giphy.mp4")
-// s0.initVideo("https://media1.giphy.com/media/eUX0LVWUUbtLaAI5HT/giphy.mp4")
-// s0.initVideo("https://media1.giphy.com/media/eUX0LVWUUbtLaAI5HT/giphy.mp4")
+//ideon
+// by MDN @markdenardo
 
-// src(s0).pixelate(100,100).out(o0)
-// render(o0)
-// src(s0).pixelate(100,100).blend(src(o0).rotate(()=>time,1),f).out(o1)
-// render(o1)
+// s1.initVideo("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmZkNmFmMWJlZTM1NjVmODc5NjhlMGIxMGI3N2NhMjQ0NmRmNTc2NyZjdD1n/DkleR7V8RMtrim0cH5/giphy.mp4")
+// s2.initVideo("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzEyZDUyODk0YWYwYzc2ZjExZDQ1ZjQ5OGM5MjAzODFmZGI0MThmYiZjdD1n/fvCoIEB8YtKghURZcA/giphy.mp4")
+// src(s1)
+// 	.pixelate(100, 100)
+// 	.add(s1, f)
+// 	.add(s2, f)
+// 	.out(o1)
+
+ render(o0)
+//render(o1)
+
